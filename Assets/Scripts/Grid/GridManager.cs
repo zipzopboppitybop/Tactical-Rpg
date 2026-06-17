@@ -42,6 +42,7 @@ public class GridManager : MonoBehaviour
 
                     Tile tileScript = tile.GetComponent<Tile>();
                     tileScript.gridPosition = new Vector2Int(i, j);
+                    tileScript.originalColor = tileRenderer.material.color;
                     map[i,j] = tileScript; 
                 }
             }
